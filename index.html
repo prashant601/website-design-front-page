@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website1</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background: url("img/captain.jpg") no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        #header {
+            display: inline-block;
+            overflow: auto;
+            width: 15%;
+            padding: 11px 5px;
+
+
+        }
+
+        #left {
+            /* border: 2px solid red; */
+            /* background-color: grey; */
+            /* float: left; */
+            /* margin: 9px 11px; */
+            padding: 0px 68px;
+            position: absolute;
+            left: -34px;
+            text-shadow: 2px 3px grey;
+            top: 156px;
+            width: 16%;
+            font-family: 'Russo One', sans-serif;
+            font-size: 40px;
+            color: rgb(175, 11, 11);
+        }
+
+        #mid {
+            /* border: 2px solid red; */
+            /* background-color: rgb(42, 72, 206); */
+            width: 42%;
+            padding: 3px 13px;
+            margin: -5px auto;
+        }
+
+        #right {
+            /* border: 2px solid red; */
+            /* background-color: rgb(96, 209, 51); */
+            float: right;
+            padding: 4px 7px;
+            position: absolute;
+            right: 3px;
+            top: 3px;
+            width: 25%;
+            height: 21%;
+        }
+
+        #img {
+            /* background: transparent; */
+            height: 33px;
+            background-size: 33px;
+            position: absolute;
+            left: 5px;
+            top: 5px;
+            width: 15px;
+            /* background:transparent!important; */
+        }
+
+        .navbar {
+            background-color: rgb(217, 224, 224);
+            /* border: 2px solid purple; */
+            border-radius: 16px;
+            padding: 0px;
+
+        }
+
+        .navbar ul {
+            overflow: auto;
+            padding: 1px 4px;
+    display: inline-flex;
+        }
+
+        .navbar li {
+            float: left;
+            list-style: none;
+            font-size: 15px;
+            /* font-family: cursive; */
+            font-family: 'Fredoka One', cursive;
+            margin: auto;
+            padding: 0px 6px;
+
+        }
+
+        .navbar li a {
+            color: rgb(161, 54, 54);
+            text-decoration: none;
+            padding: 0px 20px;
+            margin: auto auto;
+        }
+
+        .navbar li a:hover {
+            color: chocolate;
+            text-decoration-line: underline;
+        }
+
+        .search input {
+            border: 2px solid rgb(64, 64, 65);
+            background-color: rgb(240, 235, 235);
+            border-radius: 11px;
+            float: right;
+            padding: 4px;
+            margin: 14px 163px;
+        }
+
+        .ss {
+
+            position: absolute;
+            top: 15px;
+            right: 13px;
+            width: 12%;
+        }
+
+        .container {
+            /* background-color: darkorange; */
+            width: 30%;
+            position: absolute;
+            left: 965px;
+            top: 160px;
+            height: 400px;
+        }
+
+        h3 {
+            display: inline;
+            font-size: 27px;
+            padding: 23px;
+            margin: 8px 9px;
+            font-family: 'Fredoka One', cursive;
+
+
+        }
+
+        .details {
+            list-style: none;
+            padding: 5px 1px;
+            font-size: 19px;
+            font-family: 'Patua One', cursive;
+
+        }
+
+        .input {
+            padding: 6px 37px;
+            border-radius: 10px;
+            background-color: #d8d6d6;
+        }
+
+        .gender {
+            font-size: 25px;
+            margin: 0px 6px;
+            padding: 0px 5px;
+            color: #1b235a;
+        }
+
+        .bt {
+            font-family: cursive;
+            background-color: #1c1f18;
+            padding: 0px 20px;
+            margin: 0px;
+            position: relative;
+            left: 62px;
+            top: -10px;
+            color: #dcd4d4;
+            font-size: 20px;
+
+        }
+
+        .bt:hover {
+            background-color: #063463;
+            cursor: pointer;
+            box-shadow: 10px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div id="img">
+            <img src="img/logan.png" height="200px">
+        </div>
+        <div id="left">
+            <p>MARVEL</p>
+        </div>
+        <div id="mid">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">TEST</a></li>
+                    <li><a href="#">CONTEST</a></li>
+                    <li><a href="#">CLASS</a></li>
+                    <li><a href="#">CONTACT</a></li>
+
+                </ul>
+            </nav>
+        </div>
+        <div id="right" class="search">
+            <input type="text" name="search" id="search" placeholder="search here">
+            <div class="ss">
+                <img src="img/setting.png" height: 30px; width="30px">
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div>
+            <h3>FILL YOUR DETAILS</h3>
+        </div>
+        <form action="bb.php">
+            <ul>
+                <li class="details">NAME</li>
+                <input class="input" type="TEXT" placeholder="enter your name">
+                <li class="details">MAIL ID</li>
+                <input class="input" type="email" name="mail" placeholder="enter your mail">
+                <li class="details">CONTACT NO.</li>
+                <input class="input" type="number" name="no." placeholder="enter your mobile no.">
+                <li class="details">GENDER</li>
+                <div class="gender">
+
+                    male<input type="radio" name="gender"> female <input type="radio" name="gender">others <input
+                        type="radio" name="gender">
+
+                </div>
+            </ul>
+            <div>
+                <button class="bt">submit</button>
+                <input class="bt" type="reset" value="reset  ">
+            </div>
+
+    </div>
+    </form>
+
+</body>
+
+</html>
